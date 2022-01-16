@@ -1,0 +1,40 @@
+@keyframes fromTop {
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    75% {
+        transform: translateY(-50px);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scale {
+    0% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    100% {
+        oapcity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

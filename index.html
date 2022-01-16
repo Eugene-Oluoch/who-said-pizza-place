@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="scss/style.css" />
+    <link rel="icon" href="images/pizza(1).png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Who Said Pizza | A Slice Of Heaven</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header-nav" id="home">
+            <article class="header-nav-center">
+                <div class="header-nav-center-logo">
+                    <a href="#" class="header-nav-center-image">
+                        <img src="images/who-said-pizza.png" alt="logo">
+                    </a>
+                    <a href="#" class="header-nav-center-hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="header-nav-center-ul">
+                    <ul class="header-nav-center-ul ul" id="ul">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#hot-pizza">Order</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#cart"><i class="fas fa-shopping-cart"></i></a></li>
+                    </ul>
+                </div>
+            </article>
+        </nav>
+        <section class="header-title">
+            <article class="header-title-welcome">
+                <h4>Welcome</h4>
+            </article>
+            <article class="header-title-main">
+                <h1>We cook your desired pizza recipe</h1>
+            </article>
+            <article class="header-title-quote">
+                <p>A slice of heaven</p>
+            </article>
+            <article class="header-title-buttons">
+                <a href="#hot-pizza" class="header-title-buttons-order">Order</a>
+                <a href="#contact" class="header-title-buttons-menu">Contact</a>
+            </article>
+        </section>
+    </header>
+    <main class="main">
+        <section class="main-location">
+            <article class="main-location limit">
+                <article class="main-location-contact">
+                    <i class="fas fa-mobile-alt fa-2x"></i>
+                    <h5>+254716276313</h5>
+                </article>
+                <article class="main-location-pin">
+                    <i class="fas fa-map-pin fa-2x"></i>
+                    <h5>Ngong Lane, Prestige Mall</h5>
+                </article>
+                <article class="main-location-time">
+                    <i class="far fa-clock fa-2x"></i>
+                    <h5>Open Monday-Friday</h5>
+                </article>
+            </article>
+        </section>
+        <section class="main-services">
+            <article class="main-services-title">
+                <h3>Our Services</h3>
+            </article>
+            <article class="main-service-center">
+                <div class="main-services-healthy scale">
+                    <div class="main-services-healthy-image">
+                        <img src="images/diet.png" alt="food" class="scale">
+                    </div>
+                    <div class="main-services-healthy-description">
+                        <h5>Healthy Foods</h5>
+                    </div>
+                </div>
+                <div class="main-services-delivery">
+                    <div class="main-services-delivery-image">
+                        <img src="images/fast-delivery.png" alt="delivery" class="fast-delivery">
+                    </div>
+                    <div class="main-services-delivery-description">
+                        <h5>Fastest Delivery</h5>
+                    </div>
+                </div>
+                <div class="main-services-recipes scale">
+                    <div class="main-services-recipes-image">
+                        <img src="images/pizza2.png" alt="food">
+                    </div>
+                    <div class="main-services-recipes-description">
+                        <h5>Original Recipes</h5>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="main-hot-pizza" id="hot-pizza">
+            <article class="main-hot-pizza-title">
+                <h3 id="hot-pizza-meals">Hot Pizza Meals</h3>
+            </article>
+            <article class="main-hot-pizza-container">
+                <div class="main-hot-pizza-italian">
+                    <div class="main-hot-pizza-italian-description">
+                        <h2 id="price-italian"></h2>
+                        <h4>Italian Pizza</h4>
+                        <p>Mozzarella, Parmesan,Guoda, Romano and cheddar</p>
+                    </div>
+                    <h3 class="ingre-title">Choose the size</h3>
+                    <div class="italian-header-main-center-description-size">
+                        <a><img src="images/pizza-size.png" alt="pizza" class="small" id="italian-small"></a>
+                        <a><img src="images/pizza-size.png" alt="pizza" class="medium" id="italian-medium"></a>
+                        <a><img src="images/pizza-size.png" alt="pizza" class="large" id="italian-large"></a>
+                    </div>
+                    <h3 class="ingre-title">Choose additional ingredients</h3>
+                    <label for="extra-cheese">
+                    <input class="input-cursor" type="checkbox"  name="italian-extra-cheese" id="italian-extra-cheese">
+                    Extra Cheese
+                </label>
+                    <label for="spicy-sauce">
+                    <input class="input-cursor" type="checkbox"  name="italian-spicy-sauce"id="italian-spicy-sauce">
+                    Spicy Sauce
+                </label>
+                    <label for="garlic-sauce">
+                    <input class="input-cursor" type="checkbox" name="italian-garlic-sauce" id="italian-garlic-sauce">
+                    Garlic Sauce
+                </label>
+                    <div class="italian-header-main-center-description-quantity">
+                        <input class="input-cursor cart-size" type="number" name="italian-quantity" id="italian-quantity" min="1" max="20" value="1">
+                        <button class="cart-add" id="add-to-cart-italian">Add to Cart</button>
+                    </div>
+                </div>
+                </div>
+                <div class="main-hot-pizza-greek">
+                    <div class="main-hot-pizza-greek-description">
+                        <h2 id="price-greek"></h2>
+                        <h4>Greek Pizza</h4>
+                        <p>Shallots, Walnuts, Prawns and Ham</p>
+                    </div>
+                    <h3 class="ingre-title">Choose the size</h3>
+                    <div class="italian-header-main-center-description-size">
+                        <a><img src="images/pizza-size.png" alt="pizza" class="small" id="greek-small"></a>
+                        <a><img src="images/pizza-size.png" alt="pizza" class="medium" id="greek-medium"></a>
+                        <a><img src="images/pizza-size.png" alt="pizza" class="large" id="greek-large"></a>
+                    </div>
+                    <h3 class="ingre-title">Choose additional ingredients</h3>
+                    <label for="extra-cheese">
+                    <input class="input-cursor" type="checkbox"  name="greek-extra-cheese" id="greek-extra-cheese">
+                    Extra Cheese
+                </label>
+                    <label for="spicy-sauce">
+                    <input class="input-cursor" type="checkbox"  name="greek-spicy-sauce"id="greek-spicy-sauce">
+                    Spicy Sauce
+                </label>
+                    <label for="garlic-sauce">
+                    <input class="input-cursor" type="checkbox" name="greek-garlic-sauce" id="greek-garlic-sauce">
+                    Garlic Sauce
+                </label>
+                    <div class="greek-quantity">
+                        <input class="input-cursor cart-size" type="number" name="greek-quantity" id="greek-quantity" min="1" max="20" value="1">
+                        <button class="cart-add" id="add-to-cart-greek">Add to Cart</button>
+                    </div>
+                </div>
+                </div>
+                <div class="main-hot-pizza-caucasian">
+                    <div class="main-hot-pizza-caucasian-description">
+                        <h2 id="price-caucasian"></h2>
+                        <h4>Caucasian Pizza</h4>
+                        <p>Dill, Parley, Mushrooms , Salmon and Basil</p>
+                    </div>
+                    <h3 class="ingre-title">Choose the size</h3>
+                    <div class="caucasian-header-main-center-description-size">
+                        <a><img src="images/pizza-size.png" alt="pizza" class="small" id="caucasian-small"></a>
+                        <a><img src="images/pizza-size.png" alt="pizza" class="medium" id="caucasian-medium"></a>
+                        <a><img src="images/pizza-size.png" alt="pizza" class="large" id="caucasian-large"></a>
+                    </div>
+                    <h3 class="ingre-title">Choose additional ingredients</h3>
+                    <label for="extra-cheese">
+                    <input class="input-cursor" type="checkbox"  name="caucasian-extra-cheese" id="caucasian-extra-cheese">
+                    Extra Cheese
+                </label>
+                    <label for="spicy-sauce">
+                    <input class="input-cursor" type="checkbox"  name="caucasian-spicy-sauce"id="caucasian-spicy-sauce">
+                    Spicy Sauce
+                </label>
+                    <label for="garlic-sauce">
+                    <input class="input-cursor" type="checkbox" name="caucasian-garlic-sauce" id="caucasian-garlic-sauce">
+                    Garlic Sauce
+                </label>
+                    <div class="caucasian-quantity">
+                        <input class="input-cursor cart-size" type="number" name="caucasian-quantity" id="caucasian-quantity" min="1" max="20" value="1">
+                        <button class="cart-add" id="add-to-cart-caucasian">Add to Cart</button>
+                    </div>
+                </div>
+                </div>
+                <div class="main-hot-pizza-american">
+                    <div class="main-hot-pizza-american-description">
+                        <h2 id="price-american"></h2>
+                        <h4>American Pizza</h4>
+                        <p>Red peppers, Roasted peppers, Laurel, Tuna and Venison</p>
+                    </div>
+                    <h3 class="ingre-title">Choose the size</h3>
+                    <div class="american-header-main-center-description-size">
+                        <a><img src="images/pizza-size.png" alt="pizza" class="small" id="american-small"></a>
+                        <a><img src="images/pizza-size.png" alt="pizza" class="medium" id="american-medium"></a>
+                        <a><img src="images/pizza-size.png" alt="pizza" class="large" id="american-large"></a>
+                    </div>
+                    <h3 class="ingre-title">Choose additional ingredients</h3>
+                    <label for="extra-cheese">
+                    <input class="input-cursor" type="checkbox"  name="american-extra-cheese" id="american-extra-cheese">
+                    Extra Cheese
+                </label>
+                    <label for="spicy-sauce">
+                    <input class="input-cursor" type="checkbox"  name="american-spicy-sauce"id="american-spicy-sauce">
+                    Spicy Sauce
+                </label>
+                    <label for="garlic-sauce">
+                    <input class="input-cursor" type="checkbox" name="american-garlic-sauce" id="american-garlic-sauce">
+                    Garlic Sauce
+                </label>
+                    <div class="american-quantity">
+                        <input class="input-cursor cart-size" type="number" name="american-quantity" id="american-quantity" min="1" max="20" value="1">
+                        <button class="cart-add" id="add-to-cart-american">Add to Cart</button>
+                    </div>
+                </div>
+                </div>
+                <div class="main-hot-pizza-tomatoe">
+                    <div class="main-hot-pizza-tomatoe-description">
+                        <h2 id="price-tomatoe"></h2>
+                        <h4>Tomatoe Pizza</h4>
+                        <p>Lettuce, Portobello, Cardamon, Muenster and Turkey</p>
+                    </div>
+                    <h3 class="ingre-title">Choose the size</h3>
+                    <div class="tomatoe-header-main-center-description-size">
+                        <a><img src="images/pizza-size.png" alt="pizza" class="small" id="tomatoe-small"></a>
+                        <a><img src="images/pizza-size.png" alt="pizza" class="medium" id="tomatoe-medium"></a>
+                        <a><img src="images/pizza-size.png" alt="pizza" class="large" id="tomatoe-large"></a>
+                    </div>
+                    <h3 class="ingre-title">Choose additional ingredients</h3>
+                    <label for="extra-cheese">
+                    <input class="input-cursor" type="checkbox"  name="tomatoe-extra-cheese" id="tomatoe-extra-cheese">
+                    Extra Cheese
+                </label>
+                    <label for="spicy-sauce">
+                    <input class="input-cursor" type="checkbox"  name="tomatoe-spicy-sauce"id="tomatoe-spicy-sauce">
+                    Spicy Sauce
+                </label>
+                    <label for="garlic-sauce">
+                    <input class="input-cursor" type="checkbox" name="tomatoe-garlic-sauce" id="tomatoe-garlic-sauce">
+                    Garlic Sauce
+                </label>
+                    <div class="tomatoe-quantity">
+                        <input class="input-cursor cart-size" type="number" name="tomatoe-quantity" id="tomatoe-quantity" min="1" max="20" value="1">
+                        <button class="cart-add" id="add-to-cart-tomatoe">Add to Cart</button>
+                    </div>
+                </div>
+                </div>
+                <div class="main-hot-pizza-margherita">
+                    <div class="main-hot-pizza-margherita-description">
+                        <h2 id="price-margherita"></h2>
+                        <h4>Margherita Pizza</h4>
+                        <p>Colby, Black beans, Pine nuts, Lobster and Chorizo</p>
+                    </div>
+                    <h3 class="ingre-title">Choose the size</h3>
+                    <div class="margherita-header-main-center-description-size">
+                        <a><img src="images/pizza-size.png" alt="pizza" class="small" id="margherita-small"></a>
+                        <a><img src="images/pizza-size.png" alt="pizza" class="medium" id="margherita-medium"></a>
+                        <a><img src="images/pizza-size.png" alt="pizza" class="large" id="margherita-large"></a>
+                    </div>
+                    <h3 class="ingre-title">Choose additional ingredients</h3>
+                    <label for="extra-cheese">
+                    <input class="input-cursor" type="checkbox"  name="margherita-extra-cheese" id="margherita-extra-cheese">
+                    Extra Cheese
+                </label>
+                    <label for="spicy-sauce">
+                    <input class="input-cursor" type="checkbox"  name="margherita-spicy-sauce"id="margherita-spicy-sauce">
+                    Spicy Sauce
+                </label>
+                    <label for="garlic-sauce">
+                    <input class="input-cursor" type="checkbox" name="margherita-garlic-sauce" id="margherita-garlic-sauce">
+                    Garlic Sauce
+                </label>
+                    <div class="margherita-quantity">
+                        <input class="input-cursor cart-size" type="number" name="margherita-quantity" id="margherita-quantity" min="1" max="20" value="1">
+                        <button class="cart-add" id="add-to-cart-margherita">Add to Cart</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="main-cart">
+            <article class="main-cart-title">
+                <h3 id="cart">Cart</h3>
+            </article>
+            <article class="main-cart-headings">
+                <h4 class="item">Item</h4>
+                <h4 class="price">Price</h4>
+                <h4 class="quantity">Quantity</h4>
+            </article>
+            <ul class="cart" id="cart">
+            </ul>
+            <article class="main-cart-proceed">
+                <button class="main-cart-proceed-button" id="main-cart-proceed-button">Proceed To Checkout</button>
+            </article>
+        </section>
+        <section class="main-contact" id="contact">
+            <aritcle class="main-contact-title">
+                <h3 id="contact-us">Contact Us</h3>
+            </aritcle>
+            <article class="main-contact-form">
+                <form>
+                    <div class="main-contact-form-firstname inline-block">
+                        <input type="text" placeholder="First Name" id="first-name" required>
+                    </div>
+                    <div class="main-contact-form-lastname inline-block">
+                        <input type="email" placeholder="Email" id="email" required>
+                    </div>
+                    <textarea id="text-area" placeholder="Message" required></textarea>
+                    <div class="main-contact-form-send">
+                        <button>Send</button>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/order.js"></script>
+</body>
+
+</html>

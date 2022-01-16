@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-color: rgb(243, 191, 97) black;
+}
+
+html {
+    font-size: 100%;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+//chrome custom scroll bar
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 1rem;
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(243, 191, 97);
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}

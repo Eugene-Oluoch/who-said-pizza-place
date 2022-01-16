@@ -1,0 +1,1387 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scrollbar-color: #f3bf61 black;
+}
+
+html {
+    font-size: 100%;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 1rem;
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f3bf61;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+.header {
+    height: 100vh;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../images/hemant-latawa-IfQlwNqJqV8-unsplash.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/hemant-latawa-IfQlwNqJqV8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-nav-center {
+    padding: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: black;
+}
+
+.header-nav-center-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header-nav-center-ul ul li {
+    padding: 1rem 0rem;
+    padding-left: 0.5rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.header-nav-center-ul ul li a {
+    color: white;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-nav-center-ul ul li a:hover {
+    color: #f3bf61;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-nav-center-image img {
+    width: 6rem;
+}
+
+.header-nav-center-hamburger span {
+    display: block;
+    background-color: white;
+    width: 26px;
+    height: 2px;
+}
+
+.header-nav-center-hamburger span:not(:last-child) {
+    margin-bottom: 0.42rem;
+}
+
+.header-title {
+    color: white;
+    text-align: center;
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.header-title-welcome {
+    color: #f3bf61;
+    font-family: "Neonderthaw", cursive;
+    font-size: 2rem;
+    -webkit-animation-name: fromTop;
+    animation-name: fromTop;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.header-title-main {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.header-title-quote {
+    font-weight: 400;
+}
+
+.header-title-buttons {
+    position: relative;
+    top: 8rem;
+}
+
+.header-title-buttons a {
+    width: 130px;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 0.1rem;
+    cursor: pointer;
+}
+
+.header-title-buttons-order {
+    margin-right: 2rem;
+    background-color: #f3bf61;
+    border: 1px solid #f3bf61;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    color: black;
+}
+
+.header-title-buttons-order:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #f3bf61;
+    color: #f3bf61;
+}
+
+.header-title-buttons-menu {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+.header-title-buttons-menu:hover {
+    color: black;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #f3bf61;
+    border: 1px solid #f3bf61;
+}
+
+.cart-header-nav {
+    background-color: black;
+}
+
+.cart-header-nav-center {
+    padding: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.cart-header-nav-center-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.cart-header-nav-center-ul ul li {
+    padding: 1rem 0rem;
+    padding-left: 0.5rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.cart-header-nav-center-ul ul li a {
+    color: white;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.cart-header-nav-center-ul ul li a:hover {
+    color: #f3bf61;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.cart-header-nav-center-image img {
+    width: 6rem;
+}
+
+.cart-header-nav-center-hamburger span {
+    display: block;
+    background-color: white;
+    width: 26px;
+    height: 2px;
+}
+
+.cart-header-nav-center-hamburger span .italian-header-main {
+    margin: 0 auto;
+}
+
+.cart-header-nav-center-hamburger span:not(:last-child) {
+    margin-bottom: 0.42rem;
+}
+
+.cart-header-nav-center-hamburger span .italian-header-main {
+    margin: 0 auto;
+}
+
+.main-location {
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+
+.main-location-contact {
+    margin-inline: auto;
+    width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.main-location-contact h5 {
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+
+.main-location-pin {
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    margin-inline: auto;
+    width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.main-location-pin h5 {
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+
+.main-location-time {
+    margin-bottom: 1rem;
+    padding-top: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 300px;
+    margin-inline: auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.main-location-time h5 {
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+
+.main-location-time p {
+    font-size: 1rem;
+}
+
+.main-location i {
+    color: #f3bf61;
+}
+
+.main-services {
+    background-image: url(../images/food.png);
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+}
+
+.main-services-title {
+    padding: 2rem 0;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.main-services-healthy {
+    padding-bottom: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.main-services-healthy-image {
+    padding: 1rem;
+    border: 1px solid #4d4d4d;
+    width: 100px;
+}
+
+.main-services-healthy-image img {
+    width: 100%;
+}
+
+.main-services-healthy-description h5 {
+    font-size: 1.5rem;
+    color: #4d4d4d;
+}
+
+.main-services-delivery {
+    padding-bottom: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.main-services-delivery-image {
+    border: 1px solid #4d4d4d;
+    width: 100px;
+    padding: 1rem;
+}
+
+.main-services-delivery-image img {
+    width: 100%;
+}
+
+.main-services-delivery-description h5 {
+    font-size: 1.5rem;
+    color: #4d4d4d;
+}
+
+.main-services-recipes {
+    padding-bottom: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.main-services-recipes-image {
+    border: 1px solid #4d4d4d;
+    width: 100px;
+    padding: 1rem;
+}
+
+.main-services-recipes-image img {
+    width: 100%;
+}
+
+.main-services-recipes-description h5 {
+    font-size: 1.5rem;
+    color: #4d4d4d;
+}
+
+.main-hot-pizza {
+    text-align: left;
+    background-color: black;
+    color: white;
+}
+
+.main-hot-pizza-title {
+    font-size: 2rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.main-hot-pizza-container {
+    width: 300px;
+    margin-inline: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (500px);
+    grid-template-rows: repeat(6, 500px);
+    -ms-grid-columns: 300px;
+    grid-template-columns: 300px;
+    padding-bottom: 5rem;
+}
+
+.main-hot-pizza-italian {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/italian.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/italian.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2rem;
+    margin-inline: auto;
+    padding: 0.5rem;
+}
+
+.main-hot-pizza-italian:hover {
+    -webkit-transform: scale(1.005);
+    transform: scale(1.005);
+}
+
+.main-hot-pizza-italian-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: "Roboto", sans-serif;
+}
+
+.main-hot-pizza-italian-description h2 {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.main-hot-pizza-italian-description h4 {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.main-hot-pizza-italian-description p {
+    font-size: 0.9rem;
+    padding-bottom: 2rem;
+}
+
+.main-hot-pizza-italian-description-order a {
+    position: relative;
+    top: 3rem;
+    font-size: 0.8rem;
+    padding: 0.5rem 7rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid white;
+}
+
+.main-hot-pizza-italian-description-order a:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #f3bf61;
+    border: 1px solid #f3bf61;
+    color: black;
+}
+
+.main-hot-pizza-greek {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/greek.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/greek.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 2rem;
+    padding: 0.5rem;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+}
+
+.main-hot-pizza-greek:hover {
+    -webkit-transform: scale(1.005);
+    transform: scale(1.005);
+}
+
+.main-hot-pizza-greek-description h2 {
+    font-size: 2rem;
+}
+
+.main-hot-pizza-greek-description h4 {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.main-hot-pizza-greek-description p {
+    font-size: 0.9rem;
+    padding: 2rem 0;
+}
+
+.main-hot-pizza-greek-description-order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 5rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.main-hot-pizza-greek-description-order a {
+    position: relative;
+    top: 3.6rem;
+    font-size: 0.8rem;
+    padding: 0.5rem 7rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid white;
+}
+
+.main-hot-pizza-greek-description-order a:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #f3bf61;
+    border: 1px solid #f3bf61;
+    color: black;
+}
+
+.main-hot-pizza-caucasian {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/caucasian.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/caucasian.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 2rem;
+    padding: 0.5rem;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+}
+
+.main-hot-pizza-caucasian:hover {
+    -webkit-transform: scale(1.005);
+    transform: scale(1.005);
+}
+
+.main-hot-pizza-caucasian-description h2 {
+    font-size: 2rem;
+}
+
+.main-hot-pizza-caucasian-description h4 {
+    font-size: 1.5rem;
+}
+
+.main-hot-pizza-caucasian-description p {
+    font-size: 0.9rem;
+    padding: 2rem 0;
+}
+
+.main-hot-pizza-caucasian-description-order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.main-hot-pizza-caucasian-description-order a {
+    position: relative;
+    top: 3.8rem;
+    font-size: 0.8rem;
+    padding: 0.5rem 7rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid white;
+}
+
+.main-hot-pizza-caucasian-description-order a:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #f3bf61;
+    border: 1px solid #f3bf61;
+    color: black;
+}
+
+.main-hot-pizza-american {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/american.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/american.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 2rem;
+    padding: 0.5rem;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+}
+
+.main-hot-pizza-american:hover {
+    -webkit-transform: scale(1.005);
+    transform: scale(1.005);
+}
+
+.main-hot-pizza-american-description h4 {
+    font-size: 1.2rem;
+}
+
+.main-hot-pizza-american-description p {
+    font-size: 0.9rem;
+    padding: 2rem 0;
+}
+
+.main-hot-pizza-american-description-order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.main-hot-pizza-american-description-order a {
+    position: relative;
+    top: 3rem;
+    font-size: 0.8rem;
+    padding: 0.5rem 7rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid white;
+}
+
+.main-hot-pizza-american-description-order a:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #f3bf61;
+    border: 1px solid #f3bf61;
+    color: black;
+}
+
+.main-hot-pizza-tomatoe {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/tomato.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tomato.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 2rem;
+    margin-inline: auto;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.main-hot-pizza-tomatoe:hover {
+    -webkit-transform: scale(1.005);
+    transform: scale(1.005);
+}
+
+.main-hot-pizza-tomatoe-description h4 {
+    font-size: 1.2rem;
+}
+
+.main-hot-pizza-tomatoe-description p {
+    font-size: 0.9rem;
+    padding: 2rem 0;
+}
+
+.main-hot-pizza-tomatoe-description-order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.main-hot-pizza-tomatoe-description-order a {
+    position: relative;
+    top: 3rem;
+    font-size: 0.8rem;
+    padding: 0.5rem 7rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid white;
+}
+
+.main-hot-pizza-tomatoe-description-order a:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #f3bf61;
+    border: 1px solid #f3bf61;
+    color: black;
+}
+
+.main-hot-pizza-margherita {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/Margherita.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/Margherita.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 2rem;
+    padding: 0.5rem;
+    margin-inline: auto;
+}
+
+.main-hot-pizza-margherita:hover {
+    -webkit-transform: scale(1.005);
+    transform: scale(1.005);
+}
+
+.main-hot-pizza-margherita-description h4 {
+    font-size: 1.2rem;
+}
+
+.main-hot-pizza-margherita-description p {
+    font-size: 0.9rem;
+    padding: 2rem 0;
+}
+
+.main-hot-pizza-margherita-description-order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.main-hot-pizza-margherita-description-order a {
+    position: relative;
+    top: 3rem;
+    font-size: 0.8rem;
+    padding: 0.5rem 7rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid white;
+}
+
+.main-hot-pizza-margherita-description-order a:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #f3bf61;
+    border: 1px solid #f3bf61;
+    color: black;
+}
+
+.main-contact {
+    background-image: url(../images/food.png);
+    padding-bottom: 3rem;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.main-contact-title h3 {
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+
+.main-contact-form-firstname input {
+    margin-bottom: 1rem;
+}
+
+.main-contact-form-send {
+    margin-top: 2rem;
+}
+
+.main-contact-form-send button {
+    width: 200px;
+    padding: 0.5rem 1rem;
+    color: black;
+    background-color: rgba(77, 77, 77, 0.1);
+    border: 1px solid #666666;
+    border-radius: 0.1rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-contact-form-send button:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #df9711;
+    border: 1px solid #df9711;
+    color: black;
+}
+
+.main-contact-form form input {
+    width: 300px;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid #af770d;
+    cursor: pointer;
+}
+
+.main-contact-form form textarea {
+    margin-top: 1rem;
+    width: 300px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid #af770d;
+    resize: none;
+    cursor: pointer;
+}
+
+.main-services-delivery:hover .fast-delivery {
+    -webkit-animation-name: fromLeft;
+    animation-name: fromLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.scale:hover img {
+    -webkit-animation-name: scale;
+    animation-name: scale;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.small {
+    height: 2rem;
+    cursor: pointer;
+}
+
+.small:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.medium {
+    height: 3rem;
+    cursor: pointer;
+}
+
+.medium:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.large {
+    height: 4rem;
+    cursor: pointer;
+}
+
+.large:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.ingre-title {
+    font-size: 1.2rem;
+}
+
+.input-cursor {
+    cursor: pointer;
+}
+
+.cart-size {
+    width: 3.2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.cart-add {
+    width: 6rem;
+    padding: 0.2rem;
+    cursor: pointer;
+    background-color: #f3bf61;
+    border: 1px solid #f3bf61;
+    border-radius: 0.2rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.cart-add:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #f3bf61;
+}
+
+.cart {
+    list-style-type: none;
+    font-family: "Oswald", sans-serif;
+    padding-bottom: 0.5rem;
+}
+
+.cart-li {
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.cart-li-item-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 4rem;
+}
+
+.cart-li-item-image img {
+    width: 3rem;
+}
+
+.cart-li-price-li {
+    margin-right: 3rem;
+}
+
+.cart-li-quantity-li {
+    margin-left: 2rem;
+}
+
+.main-cart {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/bg_1.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/bg_1.jpg);
+    background-size: center;
+    background-position: center;
+}
+
+.main-cart-title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.main-cart-title h3 {
+    padding: 1rem;
+}
+
+.main-cart-headings {
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.main-cart-total {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.main-cart-total h4 {
+    margin-left: 17.9rem;
+    border-top: 2px solid white;
+}
+
+.main-cart-proceed {
+    text-align: center;
+}
+
+.main-cart-proceed-button {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: #f3bf61;
+    border: 2px solid #f3bf61;
+    border-radius: 0.2rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-cart-proceed-button:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #f3bf61;
+    color: white;
+}
+
+.item {
+    margin-right: 4rem;
+    border-bottom: 2px solid white;
+}
+
+.price {
+    margin-left: 3.5rem;
+    border-bottom: 2px solid white;
+}
+
+.quantity {
+    margin-left: 5rem;
+    border-bottom: 2px solid white;
+}
+
+#hot-pizza-meals {
+    color: #e35922;
+}
+
+@media (min-width: 270px) {
+    .ul {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .header-title-main h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .inline-block {
+        display: inline-block;
+    }
+    .ul {
+        display: inline-block;
+    }
+    .header-nav {
+        background-color: black;
+    }
+    .header-nav-center {
+        padding: 0.5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .header-nav-center-ul li {
+        display: inline-block;
+        margin-left: 3rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+    .header-nav-center-logo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .header-nav-center-hamburger {
+        display: none;
+    }
+    .header-title-main h1 {
+        font-size: 2rem;
+    }
+    .main-location {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .main-location-contact {
+        padding-top: 1rem;
+        padding-left: 2rem;
+    }
+    .main-location-time {
+        padding-bottom: 1rem;
+    }
+    .main-service-center {
+        margin-inline: auto;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .main-hot-pizza-container {
+        width: 700px;
+        margin-inline: auto;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-rows: (500px);
+        grid-template-rows: repeat(3, 500px);
+        -ms-grid-columns: (350px);
+        grid-template-columns: repeat(2, 350px);
+        -webkit-column-gap: 2rem;
+        column-gap: 2rem;
+    }
+    .main-contact-form form {
+        width: 700px;
+        margin-inline: auto;
+    }
+    .main-contact-form form textarea {
+        width: 600px;
+    }
+    .main-contact-form-send a {
+        padding: 0.5rem 4rem;
+    }
+    .cart-header-nav-center {
+        padding: 0.5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .cart-header-nav-center-ul li {
+        display: inline-block;
+        margin-left: 3rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+    .cart-header-nav-center-logo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .cart-header-nav-center-hamburger {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .header-title-main h1 {
+        font-size: 2.3rem;
+    }
+    .main-location-limit {
+        margin-inline: auto;
+        width: 1100px;
+    }
+    .main-service-center {
+        width: 1000px;
+    }
+    .main-hot-pizza-container {
+        width: 1000px;
+        margin-inline: auto;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-rows: (450px);
+        grid-template-rows: repeat(2, 450px);
+        -ms-grid-columns: (300px);
+        grid-template-columns: repeat(3, 300px);
+        -webkit-column-gap: 2rem;
+        column-gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header-nav-center {
+        margin-inline: auto;
+        width: 1200px;
+    }
+    .header-title-main h1 {
+        font-size: 2.5rem;
+    }
+    .cart-header-nav-center {
+        margin-inline: auto;
+        width: 1200px;
+    }
+}
+
+@-webkit-keyframes fromTop {
+    0% {
+        -webkit-transform: translateY(-200px);
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    75% {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+        opacity: 0.8;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fromTop {
+    0% {
+        -webkit-transform: translateY(-200px);
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    75% {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+        opacity: 0.8;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes scale {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100% {
+        oapcity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100% {
+        oapcity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes fromLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes fromLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+
+/*# sourceMappingURL=style.css.map */
