@@ -662,6 +662,6 @@ button_proceed.addEventListener('click', function() {
         let address = prompt("Enter your address: ");
         alert(`Your order will be delivered to: ${address}`)
     } else {
-        alert("You clicked me but you want to test out the options given")
+        alert("Pick you order at Prestige Mall, Ngong Lane")
     }
 });
