@@ -676,9 +676,9 @@ button_proceed.addEventListener('click', function() {
 
 //contact info
 
-let name = document.getElementById('first-name').value;
+let name_user = document.getElementById('first-name').value;
 let email = document.getElementById('email');
-let send = document.getElementById('send-contact');
-send.addEventListener('click', function(e) {
-    alert(`Thank you for contacting us.`)
+let send = document.getElementById('form-contact');
+send.addEventListener('submit', function() {
+    alert(`Thank you ${name_user} for contacting us. We will get back to you via the email provided`);
 });
