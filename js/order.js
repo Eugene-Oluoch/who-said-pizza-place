@@ -656,6 +656,7 @@ function quantityMultiplyMargherita() {
 };
 //Proceed to checkout
 let button_proceed = document.getElementById('main-cart-proceed-button');
+let cart_cheeck = document.getElementById('cart');
 button_proceed.addEventListener('click', function() {
     if (confirm("Do you want your order to be delivered? ")) {
         alert("The deliver fee is $10 and we only do deliveries in Nairobi");
@@ -670,4 +671,14 @@ button_proceed.addEventListener('click', function() {
     } else {
         alert("Pick your order at Prestige Mall, Ngong Lane")
     }
+});
+
+
+//contact info
+
+let name = document.getElementById('first-name').value;
+let email = document.getElementById('email');
+let send = document.getElementById('send-contact');
+send.addEventListener('click', function(e) {
+    alert(`Thank you for contacting us.`)
 });
