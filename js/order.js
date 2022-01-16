@@ -660,7 +660,13 @@ button_proceed.addEventListener('click', function() {
     if (confirm("Do you want your order to be delivered? ")) {
         alert("The deliver fee is $10 and we only do deliveries in Nairobi");
         let address = prompt("Enter your address: ");
-        alert(`Your order will be delivered to: ${address}`)
+        if (address.length === 0) {
+            alert("Enter a valid address")
+            let new_address = prompt('Enter your address: ');
+            alert(`Your order will be delivered to: ${new_address}`)
+        } else {
+            alert(`Your order will be delivered to: ${address}`)
+        }
     } else {
         alert("Pick your order at Prestige Mall, Ngong Lane")
     }
