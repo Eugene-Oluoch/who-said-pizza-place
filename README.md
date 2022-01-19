@@ -10,7 +10,7 @@ To get a local copy to your machine.
 Repository link: [Who Said Pizza](https://github.com/Eugene-Oluoch/who-said-pizza-place)
 ### Developed with
 * HTML for structure.
-* CSS for custom styles.
+* Sass for custom styles.
 * JavaScript and Jquery for functionality and behaviour.
 ### BDD
 * Objectives
